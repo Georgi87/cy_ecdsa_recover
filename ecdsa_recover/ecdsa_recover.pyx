@@ -400,7 +400,7 @@ def hash_to_int(msghash):
     z = 0
     for c in msghash:
         z *= 256
-        z += ord(c)
+        z += c
     return z
 
 def ecdsa_raw_recover(msghash, vrs):
